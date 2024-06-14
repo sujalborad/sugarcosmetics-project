@@ -52,6 +52,7 @@ body {
 }
 
 /* middle-header */
+
 .middle-header {
   display: flex;
   justify-content: space-between;
@@ -117,6 +118,75 @@ body {
   margin-left: 10px;
   height: 20px;
   width: auto;
+}
+
+/* middle-header */
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #218838;
+}
+
+.hidden {
+  display: none;
 }
 
 /* bottom-header */
@@ -432,7 +502,6 @@ body {
   border-radius: 10px;
 }
 
-
 /* footer-contain */
 
 .footer-contain {
@@ -442,7 +511,7 @@ body {
   margin-left: 50px;
 }
 
-.footer-contain-left span{
+.footer-contain-left span {
   color: #fc2779;
 }
 
@@ -599,7 +668,6 @@ body {
   }
 }
 
-
 /* Media Queries */
 
 /* Devices with width between 320px and 766px (e.g., mobile phones) */
@@ -608,12 +676,12 @@ body {
   .middle-header .middle-header-search-box input {
     width: 200px;
   }
-  
+
   .bottom-header a {
     margin-left: 20px;
     font-size: 11px;
   }
-  
+
   /* Body-Contain-1 */
   .Body-Contain-1 {
     padding-top: 100px;
@@ -659,22 +727,22 @@ body {
     width: 100px;
     height: 100px;
   }
-  
+
   #footer .heading {
     display: flex;
     flex-direction: column;
   }
-  
+
   #footer .heading > a {
     margin-top: 15px;
   }
-  
+
   #footer .contact {
     flex-direction: column;
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  
+
   #footer .contact > div {
     margin: 10px;
   }
